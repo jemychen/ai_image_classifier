@@ -1,6 +1,9 @@
-def main():
-    print("Hello from ai-image-classifier!")
-
-
-if __name__ == "__main__":
-    main()
+import cv2
+import numpy as np
+import streamlit as st
+from tensorflow.keras.applications.mobilenet_v2 import (
+    MobileNetV2,
+    preprocess_input,
+    decode_predictions
+)
+from PIL import Image
